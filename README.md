@@ -32,4 +32,5 @@ The following Qt classes are demonstrated in this project:
 - QVariant
 - QTreeView
 
-
+For more information, see the file doc/html/index.html, which contains Doxygen-generated
+HTML for the classes used in this project.
