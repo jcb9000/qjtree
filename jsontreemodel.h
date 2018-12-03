@@ -91,9 +91,9 @@ private:
   QJsonValue jsonFromVariant(const QVariant &var);
 
 public:
-  explicit JsonTreeModel(QObject *parent = 0);
-  JsonTreeModel(const QString &file, QJsonParseError *err, QObject *parent = 0);
-  virtual ~JsonTreeModel();
+  explicit JsonTreeModel(QObject *parent = nullptr);
+  JsonTreeModel(const QString &file, QJsonParseError *err, QObject *parent = nullptr);
+  virtual ~JsonTreeModel() override;
 
   bool isModified();
   void resetModified();

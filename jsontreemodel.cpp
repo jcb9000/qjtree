@@ -298,7 +298,7 @@ QJsonValue JsonTreeModel::jsonFromVariant(const QVariant &var)
       resultValue = QJsonValue(iVal);
     }
   }
-  catch(std::invalid_argument &ia) {
+  catch(std::invalid_argument /* &ia */) {
     resultValue = QJsonValue(sVal);
   }
 
